@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="google-site-verification" content="HdgmRBSK4oeUYpvUPE_fN7kz2tIMS74XPBjgE3K9is4" />
       </head>
+      <meta name="google-site-verification" content="HdgmRBSK4oeUYpvUPE_fN7kz2tIMS74XPBjgE3K9is4" />
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-white `} >
         {children}
       </body>
