@@ -25,8 +25,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
+      <head>
+        <meta name="google-site-verification" content="HdgmRBSK4oeUYpvUPE_fN7kz2tIMS74XPBjgE3K9is4" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-white `} >
-        <Navbar />
         {children}
       </body>
     </html>
