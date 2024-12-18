@@ -2,6 +2,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { linksGenerator } from "../app/Links/page.js"
 import Link from "next/link";
+import "../app/styles/BlobButton.css"
+import Navbar from "./components/nav";
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,8 +25,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-300 text-white ml-8 mr-8 flex flex-col items-center justify-center`} >
-        {navbar()}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-white `} >
+        <Navbar />
         {children}
       </body>
     </html>
@@ -30,21 +34,3 @@ export default function RootLayout({ children }) {
 }
 
 
-function navbar(){
-  return(
-    <nav className="sticky top-0 flex items-center justify-between p-4 bg-zinc-800 rounded-2xl mt-4 mb-8 w-6/12">
-      <div id="logo" className="font-bold">
-        Arthur Cerqueira
-      </div>
-      <div id="logo" className="font-bold">
-        Arthur Cerqueira
-      </div>
-      <div id="links" className="font-bold
-      ">
-        Yes baby
-      {/* {linksGenerator()}
-      <li className="list-none pr-4"><Link target="Blank" href={"/Links"}>Gerenciador de Links</Link></li> */}
-      </div>
-    </nav>
-  )
-}
