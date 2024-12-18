@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { linksGenerator } from "../app/Links/page.js"
-import Link from "next/link";
+
 import "../app/styles/BlobButton.css"
 import Navbar from "./components/nav";
 
@@ -29,7 +28,8 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content="HdgmRBSK4oeUYpvUPE_fN7kz2tIMS74XPBjgE3K9is4" />
       </head>
       <meta name="google-site-verification" content="HdgmRBSK4oeUYpvUPE_fN7kz2tIMS74XPBjgE3K9is4" />
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-white `} >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased  text-white bg-black`} >
+        <Navbar />
         {children}
       </body>
     </html>
