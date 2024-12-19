@@ -18,7 +18,7 @@ export default function Navbar() {
             </div>
             <div>
                 <ul className="md:flex hidden items-center">
-                    <LinksGenerator />
+                    <LinksGenerator estilo="p-4 hover:text-green-400" />
                     <button className="bg-white text-black px-4 py-2 rounded hover:bg-green-400">
                         Login/Cadastro
                     </button>

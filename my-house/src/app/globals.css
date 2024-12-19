@@ -19,3 +19,8 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.typed-cursor {
+  font-size: 3rem; /* Ajuste o tamanho */
+  animation: blink 0.7s infinite; /* Animação de piscar */
+}

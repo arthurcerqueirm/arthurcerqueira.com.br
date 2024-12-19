@@ -7,7 +7,7 @@ export default function ContadorDeTempo() {
 
     useEffect(() => {
         function calculaTempo() {
-            const dataEvento = new Date("2024-12-31").getTime(); // Data do evento
+            const dataEvento = new Date("2025-02-13").getTime(); // Data do evento
             const agora = new Date().getTime(); // Data atual
             return dataEvento - agora;
         }

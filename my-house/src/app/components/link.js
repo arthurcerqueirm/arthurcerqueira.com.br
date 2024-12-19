@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-export function LinksGenerator() {
+export function LinksGenerator(estilo) {
     const [linksList, setLinksList] = useState([]);
 
     useEffect(() => {
@@ -17,12 +17,13 @@ export function LinksGenerator() {
         fetchLinks();
     }, []);
 
+    console.log(estilo.estilo)
     return (
         <>
             {linksList.map((link) => (
                 <li key={link.pageurl} className="list-none pr-4">
                     <Link
-                        className="p-4 hover:text-green-400"
+                        className={estilo.estilo}
                         target="_blank"
                         href={link.pageurl}
                     >
