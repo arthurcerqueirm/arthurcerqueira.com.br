@@ -13,15 +13,19 @@ export default function Navbar() {
 
     return (
         <nav className="flex items-center justify-between h-24 max-w-[1024px] mx-auto px-4">
-            <div>
-                <h1 className="w-full text-3xl font-bold">Arthur Cerqueira</h1>
-            </div>
+            <Link href={"/"}>
+                <div>
+                    <h1 className="w-full text-3xl font-bold">Arthur Cerqueira</h1>
+                </div>
+            </Link>
             <div>
                 <ul className="md:flex hidden items-center">
                     <LinksGenerator estilo="p-4 hover:text-green-400" />
-                    <button className="bg-white text-black px-4 py-2 rounded hover:bg-green-400">
-                        Login/Cadastro
-                    </button>
+                    <Link href={"/login"}>
+                        <button className="bg-white text-black px-4 py-2 rounded hover:bg-green-400">
+                            Login/Cadastro
+                        </button>
+                    </Link>
                 </ul>
             </div>
             <div onClick={handleNav} className="block md:hidden">
